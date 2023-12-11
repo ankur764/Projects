@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food website</title>
+</head>
+<style>
+    nav{
+        position:sticky;
+    }
+    nav li{
+        display: inline-block;
+        padding: 50px;
+        font-weight: bolder;
+        font-family: 'Roboto', sans-serif;
+        
+        
+    }
+    nav li:hover{
+        color:rgb(0, 128, 26);
+        
+        
+    }
+    nav img{
+        height: 55px;
+        width: 120px;
+        margin-left: 70px;
+    }
+    #search{
+        margin-left: 400px;
+        height: 40px;
+        width: 400px;
+        border-radius: 20px;
+    }
+   
+    .slider img{
+        width: 100%;
+        height: 630px;
+        
+    }
+
+    .content{
+        position: relative;
+        margin-left: 60px;
+        margin-top: 80px;
+        font-family: 'Roboto', sans-serif;
+        
+        
+    }
+    .content p{
+        font-size:400%;
+        font-family: 'Roboto', sans-serif;
+    }
+    #btn{
+        height: 50px;
+        width: 180px;
+        font-size: x-large;
+        margin-left: 50px;
+        border-radius: 40px;
+        background-color: black ;
+        border: none;
+        color: white;
+        
+    }
+    #btn:hover{
+        color:rgb(99, 214, 99) ;
+        background-color: white;
+
+    }
+    .slider{
+        width: 100%;
+        height: 600px;
+        position: absolute;
+        animation-name: ankur;
+        animation-duration:3s;
+        animation-delay: 1s;
+        animation-iteration-count: infinite;
+        
+       
+    }
+    
+    @keyframes ankur {
+        0%{
+            background-image: url(https://template.hasthemes.com/gsore/gsore/assets/img/hero/hero-home-1-img-1.jpg ) ;  
+            background-size: cover; 
+            
+        }
+        50%{
+            background-image: url(https://template.hasthemes.com/gsore/gsore/assets/img/hero/hero-home-1-img-2.jpg);
+            background-size: cover; 
+        }
+        100%{
+            background-image: url(https://template.hasthemes.com/gsore/gsore/assets/img/hero/hero-home-1-img-1.jpg);
+            background-size: cover; 
+        }
+    }
+    .box{
+        display: flex;
+        margin-top: 150px;
+        
+        
+
+    }
+    #box2{
+        margin-left: 320px;
+       
+    }
+    #box1 img{
+        height: 260px;
+        width: 630px;
+        position: absolute;
+       
+    }
+    #box2 img{
+        height: 260px;
+        width: 630px;
+        position: absolute;
+        
+    }
+    #content{
+        position: relative;
+        margin-left: 150px;
+        margin-top: 50px;
+        font-size: large;
+        color: green;
+        font-family: 'Roboto', sans-serif;
+    }
+    #content h1{
+        margin-left: -70px;
+        color: black;
+        font-family: 'Roboto', sans-serif;
+
+    }
+    #btn1{
+        height: 42px;
+        width: 110px;
+        font-size:medium;
+        background-color: green;
+        border: none;
+        color: white;
+        border-radius: 20px;
+    }
+    #btn1:hover{
+        color:rgb(99, 214, 99) ;
+        background-color: white;
+
+    }
+    .cate{
+        display: flex;
+        margin-top: 40px;
+        justify-content: space-between;
+    }
+    .cate h2{
+        font-family: 'Roboto', sans-serif;
+
+    }
+    .cate button{
+        height: 40px;
+        width: 140px;
+        margin-top: 10px;
+        border:solid green 1px;
+        border-radius: 30px;
+        background-color: white;
+        color: green;
+        font-weight: bolder;
+        font-family: 'Roboto', sans-serif;
+
+    }
+    .cate button:hover{
+        color: white;
+        background-color: green ;
+
+
+    }
+    .large{
+        display: flex;
+        justify-content: space-evenly;
+        font-family: 'Roboto', sans-serif;
+        
+
+    }
+    .large h4{
+        margin-left: 65px;
+    }
+    .large h2{
+        margin-left: 65px;
+    }
+    .large h3{
+        margin-left: 100px;
+        color: green;
+    }
+    .small,.smaller,.smallest{
+        border: solid rgb(187, 187, 187) 1px;
+    }
+    .small img{
+        
+        height: 280px;
+        width: 280px;
+        
+    }
+    .smaller img{
+        
+        height: 280px;
+        width: 280px;
+
+    }
+    .smallest img{
+        
+        height: 280px;
+        width: 280px;
+
+    }
+    .small img:hover{
+        transform: scale(1.2);
+    }
+    .smaller img:hover{
+        transform: scale(1.2);
+    }
+    .smallest img:hover{
+        transform: scale(1.2);
+    }
+    .larger{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .larger h4{
+        margin-left: 65px;
+    }
+    .larger h2{
+        margin-left: 65px;
+    }
+    .larger h3{
+        margin-left: 100px;
+        color: green;
+    }
+    .tape img{
+        position: absolute;
+        
+    }
+    .edu{
+        position: absolute;
+        margin-left: 280px;
+        margin-top: 53px;
+        font-family: 'Roboto', sans-serif;  
+    }
+    .edu button{
+        height: 42px;
+        width: 110px;
+        font-size:medium;
+        background-color: black;
+        border: none;
+        color: white;
+        border-radius: 20px;
+    }
+    .edu button:hover{
+        color: white;
+        background-color: green;
+
+    }
+    .tape img{
+        width: 1350px;
+        
+    }
+    .slider2 img{
+        position: absolute;
+        width: 1350px;
+        height: 600px;
+    }
+    .text img{
+        height: 100px;
+        width: 100px;
+    }
+    .text{
+        position: absolute;
+        margin-left: 300px;
+        margin-top: 100px;
+    }
+    .text h1,h3{
+        text-align: center;
+    }
+    .text img{
+        margin-top: 20px;
+       margin-left: 372px;
+    }
+    #name{
+        margin-top: 150px;
+        margin-left: -30px;
+    }
+    .news{
+        position: relative;
+        margin-top: 600px;
+    }
+    .news h2,button{
+        display: inline-block;
+        padding: 10px;
+        font-family: 'Roboto', sans-serif;
+        
+    }
+    .news button{
+        margin-left: 950px;
+        height: 42px;
+        width: 130px;
+        font-size:medium;
+        font-weight: bold;
+        border: none;
+        border-radius: 20px;
+        color: green;
+        border: solid green 1px;
+        background-color: white;
+    }
+    .news button:hover{
+        color: white;
+        background-color: green;
+
+    }
+    .blog{
+        display: flex;
+        justify-content: space-between;
+        overflow-x:scroll;
+        font-family: 'Roboto', sans-serif;
+    }
+    .blog::-webkit-scrollbar {
+    display: none;
+    }
+    .blog img{
+        height: 300px;
+        width: 330px;
+        padding: 50px; 
+        transition: transform .2s;
+    }
+    .blog img:hover{
+        transform: scale(1.1);
+    }
+    .blog p1{
+        color: green;
+        margin-left: 56px;
+    }
+    .blog p{
+        margin-left: 56px;
+    }
+    .blog h3{
+        margin-top: -20px;
+        margin-left: -135px;
+    }
+    .info{
+        display: flex;
+        padding: 50px;
+        font-family: 'Roboto', sans-serif;
+        justify-content: space-between;
+    }
+    .mation img{
+        height: 50px;
+        width: 100px;
+        
+    }
+    .info p{
+        color: grey;
+    }
+    #continue{
+        margin-left: 50px;
+        border-radius: 20px;
+        border: none;
+        height: 40px;
+        font-weight: bold;
+        color: white;
+        background-color: green;
+    }
+    #continue:hover{
+        color: white;
+        background-color: black;
+    }
+    .info p:hover{
+        color: green;
+        margin-left: 5px;
+        
+    }
+    #dropdown{
+        position:relative;
+        display: none;
+    }
+    #dropdown li {
+        display:block;
+
+       
+        
+    }
+    nav li:hover ul#dropdown{
+        display:inline-block;
+        background-color: rgb(165, 165, 165,0.2);
+        border-radius: 20px;
+        color: green;
+    }
+    
+   
+    
+</style>
+<body>
+    <nav>
+        <img src="https://template.hasthemes.com/gsore/gsore/assets/img/logo/logo.png" alt="">
+        <li>HOME</li>
+        <li>SHOP
+            <ul id="dropdown">
+                <li><a href="">Comapre</a></li>
+                <li><a href="">Comapre</a></li>
+                <li><a href="">Comapre</a></li>
+                <li><a href="">Comapre</a></li>
+            </ul>
+        </li>
+        <li>CUSTOM BLOCK</li>
+        <li>BLOG</li>
+        <li>PAGES</li>
+        <li>CONTACT US</li>
+    </nav>
+    <input id="search" type="text" placeholder="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Search Our Store"   >
+    
+    <br>
+    <br>
+    <div class="slider">
+        
+    </div>
+    <div class="content"> 
+        <h2>100% Health and Affordable</h2>
+        <p>ORGANIC <br> VEGETABLES</p>
+        <h1>Small Changes Big Diffrences</h1>
+        <button id="btn"> SHOP NOW</button>
+    </div>
+    <div class="box">
+        <div id="box1">
+            <img src="https://template.hasthemes.com/gsore/gsore/assets/img/banner/size-wide/banner-home-1-img-1-wide.jpg" alt="">
+            <div id="content">
+                <p>Green Vegetables</p>
+                <h1>100% ORGANIC</h1>
+                <p>Healthy Nutrition</p>
+                <button id="btn1">SHOP NOW</button>
+            </div>
+        </div>
+        <div id="box2">
+            <img src="https://template.hasthemes.com/gsore/gsore/assets/img/banner/size-wide/banner-home-1-img-2-wide.jpg" alt="">
+            <div id="content">
+                <p>Green Vegetables</p>
+                <h1>100% ORGANIC</h1>
+                <p>Healthy Nutrition</p>
+                <button id="btn1">SHOP NOW</button>
+            </div>
+            
+        </div>
+    </div>
+    <div class="cate">
+        <h2>Top Categories</h2>
+        <button>More Categories ></button>
+    </div>
+    <hr>
+    <div class="large">
+        <div class="small">
+            <img src="https://template.hasthemes.com/gsore/gsore/assets/img/product/size-normal/product-home-1-img-1.jpg" alt="">
+            <h2>⭐⭐⭐⭐☆</h2>
+            <h4> fresh green vegetables</h4>
+            <h3>$25.00</h3>
+
+        </div>
+        <div class="smaller">
+            <img src="https://template.hasthemes.com/gsore/gsore/assets/img/product/size-normal/product-home-1-img-3.jpg" alt="">
+            <h2>⭐⭐⭐⭐☆</h2>
+            <h4> fresh promegranate</h4>
+            <h3>$50.00</h3>
+
+        </div>
+        <div class="smallest">
+            <img src="https://template.hasthemes.com/gsore/gsore/assets/img/product/size-normal/product-home-1-img-7.jpg" alt="">
+            <h2>⭐⭐⭐⭐☆</h2>
+            <h4> Juice fresh orange</h4>
+            <h3>$19.00</h3>
+
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="larger">
+        <div class="small">
+            <img src="https://template.hasthemes.com/gsore/gsore/assets/img/product/size-normal/product-home-1-img-2.jpg" alt="">
+            <h2>⭐⭐⭐⭐☆</h2>
+            <h4>fresh river fish</h4>
+            <h3>$19.00</h3>
+
+        </div>
+        <div class="smaller">
+            <img src="https://template.hasthemes.com/gsore/gsore/assets/img/product/size-normal/product-home-1-img-4.jpg" alt="">
+            <h2>⭐⭐⭐⭐☆</h2>
+            <h4>Cabbage Vegetables</h4>
+            <h3>$19.00</h3>
+
+        </div>
+        <div class="smallest">
+            <img src="https://template.hasthemes.com/gsore/gsore/assets/img/product/size-normal/product-home-1-img-6.jpg" alt="">
+            <h2>⭐⭐⭐⭐☆</h2>
+            <h4>fresh gerrn apple</h4>
+            <h3>$19.00</h3>
+
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="tape">
+        <img src="https://template.hasthemes.com/gsore/gsore/assets/img/banner/size-extra-large-wide/banner-home-1-img-1-extra-large-wide.jpg" alt="">
+        <div class="edu">
+            <p>SPECIAL DISCOUNT</p>
+            <h1>For All Grocery <br>Products</h1>
+            <p>Take now 20% off for all grocer product.</p>
+            <button>SHOP NOW</button>
+
+        </div>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    
+    <div class="slider2">
+        <img src="https://template.hasthemes.com/gsore/gsore/assets/img/testimonial/testimonials-bg.jpg" alt="">
+        <div class="text">
+            <h1>Our Client Say!</h1>
+            <br> <br> <br>
+            <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero illo molestias atque assumenda veniam porro <br>magni recusandae, sed, quod dolor quisquam! Id modi recusandae natus officia <br> maxime omnis ipsa sed at itaque. Voluptatibus, nobis facilis quidem</h3>
+            <img src="https://template.hasthemes.com/gsore/gsore/assets/img/testimonial/testimonial-home-1-img-1.png" alt="">
+            <h3 id="name">Divyanshu </h3>
+        </div>
+        
+
+    </div>
+    <div class="news">
+        <h2>Our Latest News</h2>
+        <button>More blogs  ></button>
+        <hr>  
+    </div>
+    <div class="blog">
+        <div id="zomm1">
+            <img src="https://template.hasthemes.com/gsore/gsore/assets/img/blog/feed/blog-feed-home-1-img-1.jpg" alt="">
+            <h3>Andrew flamingo</h3>
+            <p1>By Partner 2022 / July 23,2022</p1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo ea nesciunt aperiam reiciendis eaque minima, vitae, dolore magni voluptatum doloribus quidem sed voluptates assumenda rem velit eius corrupti debitis nisi?</p>
+            <button id="continue">Continue Reading</button>
+
+        </div>
+        <div id="zomm1">
+            <img src="https://template.hasthemes.com/gsore/gsore/assets/img/blog/feed/blog-feed-home-1-img-2.jpg" alt="">
+            <h3>Andrew flamingo</h3>
+            <p1>By Partner 2022 / July 23,2022</p1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo ea nesciunt aperiam reiciendis eaque minima, vitae, dolore magni voluptatum doloribus quidem sed voluptates assumenda rem velit eius corrupti debitis nisi?</p>
+            <button id="continue">Continue Reading</button>
+
+        </div>
+        <div id="zomm1">
+            <img src="https://template.hasthemes.com/gsore/gsore/assets/img/blog/feed/blog-feed-home-1-img-3.jpg" alt="">
+            <h3>Andrew flamingo</h3>
+            <p1>By Partner 2022 / July 23,2022</p1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo ea nesciunt aperiam reiciendis eaque minima, vitae, dolore magni voluptatum doloribus quidem sed voluptates assumenda rem velit eius corrupti debitis nisi?</p>
+            <button id="continue">Continue Reading</button>
+        </div>
+        <div id="zomm1">
+            <img src="https://template.hasthemes.com/gsore/gsore/assets/img/blog/feed/blog-feed-home-1-img-1.jpg" alt="">
+            <h3>Andrew flamingo</h3>
+            <p1>By Partner 2022 / July 23,2022</p1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo ea nesciunt aperiam reiciendis eaque minima, vitae, dolore magni voluptatum doloribus quidem sed voluptates assumenda rem velit eius corrupti debitis nisi?</p>
+            <button id="continue">Continue Reading</button>
+            
+        </div>
+        <div id="zomm1">
+            <img src="https://template.hasthemes.com/gsore/gsore/assets/img/blog/feed/blog-feed-home-1-img-2.jpg" alt="">
+            <h3>Andrew flamingo</h3>
+            <p1>By Partner 2022 / July 23,2022</p1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo ea nesciunt aperiam reiciendis eaque minima, vitae, dolore magni voluptatum doloribus quidem sed voluptates assumenda rem velit eius corrupti debitis nisi?</p>
+            <button id="continue">Continue Reading</button>
+        </div>
+        <div id="zomm1">
+            <img src="https://template.hasthemes.com/gsore/gsore/assets/img/blog/feed/blog-feed-home-1-img-3.jpg" alt="">
+            <h3>Andrew flamingo</h3>
+            <p1>By Partner 2022 / July 23,2022</p1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo ea nesciunt aperiam reiciendis eaque minima, vitae, dolore magni voluptatum doloribus quidem sed voluptates assumenda rem velit eius corrupti debitis nisi?</p>
+            <button id="continue">Continue Reading</button>
+        </div>
+    </div>
+    
+    <br>
+    <br>
+    <hr>
+
+    <div class="info">
+        <div class="mation">
+            <img src="https://template.hasthemes.com/gsore/gsore/assets/img/logo/logo.png" alt="">
+            <p>🏠   No: 58 A, your Street, Baltimore, USA 4508</p>
+            <p>☏   +01 23456789</p>
+            <p>✉   support@somemail.com</p>
+        </div>
+        <div class="mation">
+            <p1><b>INFORMATION</b></p1>
+            <p>Delivery Infor.</p>
+            <p>Advanc. search</p>
+            <p>Helps and faqs</p>
+            <p>Store Location</p>
+            <p>Orders & Ret.</p>
+            <p>Deliveries</p>
+            <p>Refund</p>
+        </div>
+        <div class="mation">
+            <p1><b>OUR COMPANY</b></p1>
+            <p>Delivery Info.</p>
+            <p>Advanc. search</p>
+            <p>Helps and faqs</p>
+            <p>Store Location</p>
+            <p>Orders & Ret.</p>
+            <p>Deliveries</p>
+            <p>Refund</p>
+        </div>
+        <div class="mation">
+            <p1><b>MY ACCOUNT</b></p1>
+            <p>Delivery Info.</p>
+            <p>Advanc. search</p>
+            <p>Helps and faqs</p>
+            <p>Store Location</p>
+            <p>Orders & Ret.</p>
+            <p>Deliveries</p>
+            <p>Refund</p>
+        </div>
+        <div class="mation">
+            <p1><b>OPENING TIME</b></p1>
+            <p>Delivery Infor.</p>
+            <p>Advanc. search</p>
+            <p>Helps and faqs</p>
+            <p>Store Location</p>
+            <p>Orders & Ret.</p>
+            <p>Deliveries</p>
+            <p>Refund</p>
+        </div>
+    </div>
+
+   
+</body>
+</html>

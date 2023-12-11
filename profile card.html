@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile card</title>
+</head>
+<style>
+    .bg{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 800px;
+        border: none;
+        background-color: rgb(230, 225, 225);
+       
+        
+        
+    }
+    .item1{
+        height: 350px;
+        width: 450px;
+        border: none;
+        margin: 100px;
+        margin-top: 100px;
+        border-radius: 20px;
+        
+
+    }
+    .item2{
+        
+        height: 500px;
+        width: 450px;
+        border: none;
+        margin: 100px;
+        margin-top: 100px;
+        border-radius: 20px;
+        background:linear-gradient(to bottom,rgb(32, 60, 245) 28%,white 28%)
+        
+        
+    }
+    #imgdv{
+        margin-top: 80px;
+        margin-left: 160px;
+    }
+    #img{
+        border-radius: 100px;
+        border: 2px solid white;
+       
+        
+    }
+    #content{
+        margin-left: 150px;
+        font-weight: bolder;
+        
+    }
+    #id1{
+        border-left: 10px solid rgb(32, 60, 245)  ;
+        background-color:rgb(230, 225, 225) ;
+        margin-top: 160px;
+        border-radius: 0px;
+    }
+    .btn{
+        margin-left: 80px;
+        margin-top: 30px;
+       
+    }
+    .btn button{
+        margin: 10px;
+        background-color:rgb(32, 60, 245) ;
+        color: white;
+        border: none;
+        border-radius: 25px;
+        height: 37px;
+        width: 130px;
+    }
+    .like{
+        margin-left: 30px;
+    }
+    .like li{
+        display: inline-block;
+        padding: 35px;
+        font-family: 'Roboto', sans-serif;
+    }
+    #logo{
+        margin-left: 100px;
+        margin-top: 25px;
+        
+    }
+    #logo li{
+        display: inline-block;
+        margin-left: 20px;
+    }
+</style>
+<body>
+    <div class="bg">
+        <div class="item1" id="id1" >
+            <h1 style="font-size: 70px;margin: 28px; padding: 20px; color: rgb(32, 60, 245) ;font-family: 'Roboto', sans-serif; " >Profile <br>Card <br>UI Design</h1>
+        </div>
+        <div class="item2" id="id2" >
+            <div id="imgdv"><img id="img" src="https://scontent.fbek1-3.fna.fbcdn.net/v/t39.30808-6/359734108_1629960197500418_5863096407621463777_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_ohc=9VdnOVUOZk0AX-rPwl8&_nc_ht=scontent.fbek1-3.fna&oh=00_AfCI6jW8Ez3EYZIUFismS7kE969-MxoEzay6qASwuD3irQ&oe=6552D4A4" alt="" height="100px" width="100px"></div>
+            <div id="content">
+                <p style="font-size: large; font-family: 'Roboto', sans-serif;">ANKUR SHAKYA</p>
+                <P style="font-size: smaller; margin-left:15px;font-family: 'Roboto', sans-serif;">WEB DEVELOPER</P>
+            </div>
+            <div id="logo">
+                <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2zoG-1AKQ0R0h0TBbZZz_dN0Ld4ooi003ZVrq08nrSg&s" height="30px" width="35px" alt=""></li>
+                <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjC7sOp8lgnAVHimyGgEIvCl1NA5YOQFLf8m0QSF7WsA&s" alt="" height="30px" width="35px"></li>
+                <li><img src="https://img.freepik.com/premium-vector/modern-badge-logo-instagram-icon_578229-124.jpg" alt="" height="30px" width="35px"></li>
+                <li><img src="https://img.freepik.com/premium-photo/youtube-logo-video-player-3d-design-video-media-player-interface_41204-12379.jpg" alt="" height="35px" width="40px"></li>
+            </div>
+            <div class="btn">
+                <button style="font-family: 'Roboto', sans-serif;">Subscribe</button>
+                <button style="font-family: 'Roboto', sans-serif;">Message</button>
+            </div>
+            <div class="like">
+                <li><img  src="https://w7.pngwing.com/pngs/387/843/png-transparent-favorite-heart-like-likes-love-loved-basic-ui-2-line-icon.png" alt="" height="15px" width="15px"> 60.8K</li>
+                <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9w1cRGpK0eHI5Hvj41u6VC-lxtKEbMZlujO5_qYo&s" alt=""height="15px" width="15px"> 30K</li>
+                <li><img src="https://e7.pngegg.com/pngimages/700/863/png-clipart-share-icon-computer-icons-button-button-angle-text-thumbnail.png" alt="" height="20px" width="18px"> 12.6K</li>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .nav{
+        background-color: rgb(7, 4, 4,0.3);
+        height: 40px;
+        border-radius: 20px;
+        
+    }
+   
+    .nav ul li{
+        display: inline-block;
+        color: white;
+        position: relative;
+        margin-top: 10px;
+        
+    }
+    .nav ul li a{
+        color: white;
+        text-decoration: none;
+        font-size: large;
+        padding: 20px;
+        font-family: 'Roboto', sans-serif;
+        
+        
+        
+        
+    }
+    .nav ul li a:hover{
+        background-color: white;
+        color: rgb(12, 9, 9);
+        border-radius: 20px;
+    }
+    body{
+        position:relative;
+        background-image: url(https://mildwave.in/wp-content/uploads/2014/08/nikon-camera-photography-hd-wallpaper-2560x1600-6085.jpg);
+        height: 627px;
+        max-width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+    }
+    #logo{
+        font-size: xx-large;
+        margin-top: 2px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: bold;
+    }
+    #txt{
+        text-align: center;
+        margin-top: 200px;
+        font-size: xx-large;
+        color: rgb(238, 230, 230);
+        font-family: 'Roboto', sans-serif;
+    }
+    #btn1{
+        height: 50px;
+        width: 170px;
+        font-size: 15px;
+        font-weight: bold;
+        font-family: 'Roboto', sans-serif;
+        background-color: rgb(191, 164, 164,0.0);
+        border: 2px solid white;
+        color: white;
+        border-radius: 5px;
+    }
+    #btn1:hover{
+        color: black;
+        background-color: white;
+        cursor:pointer;
+    }
+    #btn2{
+        height: 50px;
+        width: 170px;
+        font-size: 15px;
+        color: black;
+        font-weight: bold;
+        font-family: 'Roboto', sans-serif;
+        border-radius: 5px;
+
+    }
+    #dropdown{
+        position: absolute;
+        display: none;
+    }
+    #dropdown li{
+        display: block;
+        padding: 10px;
+        margin-left: -40px;
+       
+    }
+    .nav ul li:hover ul#dropdown{
+        display: block;
+        
+        
+    }
+    
+   
+    
+</style>
+<body>
+    <div class="container">
+        <div class="nav"> 
+             
+
+        <ul>
+            <li id="logo">AnkurCam</li>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <li><a href="">Home </a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Brands▾</a>
+             <ul id="dropdown">
+                <li><a href="">Sony </a></li>
+                <li><a href="">Canon </a></li>
+                <li><a href="">Panasonic</a></li>
+                <li><a href="">Kodak</a></li>
+             </ul>   
+            </li>
+            <li><a href="">Contact▾</a>
+             <ul id="dropdown">
+                <li><a href="">Mob.no. </a></li>
+                <li><a href="">E-mail </a></li>
+              </ul>   
+            </li>
+            <li><a href="">Feedback</a></li>
+        </ul>
+       </div>
+       <div id="txt">
+        <h2> Create Amazing Websites <br> Pure HTML & CSS Only</h2>
+        <button id="btn1">Learn  More</button>&nbsp;&nbsp;&nbsp;&nbsp;<button id="btn2">Subscribe</button>
+       </div>
+       
+
+    </div>
+</body>
+</html>
